@@ -93,6 +93,60 @@
 
 </section>
 
+    <!-- RECENT EVENTS -->
+<section id="recent-events" class="section fade-in">
+    <h2>Recent Events & Collaborations</h2>
+    <p class="subtext">
+        A meaningful collaboration between Ma'had Tahfizul Qur'an Riyadhus Shalihin 
+        and IIUM Usrah in Action Section 39.
+    </p>
+
+    <div class="event-container">
+
+        <!-- EVENT TEXT -->
+        <div class="event-text">
+            <h3>MTQ Riyadhus Shalihin × IIUM Usrah in Action Section 39</h3>
+
+            <p>
+                On 1 May 2026, we successfully organized a collaborative talk and
+                community engagement program together with IIUM Usrah in Action
+                Section 39.
+            </p>
+
+            <p>
+                The event focused on strengthening Islamic values, sharing knowledge,
+                and building ukhuwah between university students and the Ma'had community.
+            </p>
+
+            <p>
+                We are grateful for everyone who participated and supported the program.
+                May this collaboration continue to bring benefit to the ummah.
+            </p>
+        </div>
+
+        <!-- EVENT IMAGES -->
+        <div class="event-gallery">
+
+            <div class="event-card">
+                <img src="img/event1.jpg" alt="Talk Session" onclick="openLightbox(this.src)">
+            </div>
+
+            <div class="event-card">
+                <img src="img/event2.jpg" alt="Group Photo" onclick="openLightbox(this.src)">
+            </div>
+
+            <div class="event-card">
+                <img src="img/event3.jpg" alt="Student Engagement via Google Meet in Maahad " onclick="openLightbox(this.src)">
+            </div>
+
+            <div class="event-card">
+                <img src="img/event4.jpg" alt="Q&A session" onclick="openLightbox(this.src)">
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
     <!-- ABOUT US -->
 <section id="about" class="about-section">
@@ -881,7 +935,71 @@ ul {
 #lightbox:active {
     display: none;
 }
+/* =========================
+   RECENT EVENTS
+========================= */
 
+.event-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.event-text {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.event-text h3 {
+    color: #809dcf;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.event-text p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.event-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: white;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.03);
+}
+
+.event-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .event-text {
+        padding: 20px;
+    }
+
+    .event-card img {
+        height: 220px;
+    }
+}
 /* =========================
    FOOTER
 ========================= */
@@ -905,5 +1023,8 @@ footer {
     to {
         opacity: 1;
     }
+
+
+
 }
 
